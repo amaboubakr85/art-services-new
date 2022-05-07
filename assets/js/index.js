@@ -93,10 +93,9 @@ $('.owl-carousel').owlCarousel({
   responsive: {
     0: {
       items: 1,
-      nav: true,
     },
     600: {
-      items: 3,
+      items: 1,
       nav: false,
     },
     1000: {

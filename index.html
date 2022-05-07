@@ -49,10 +49,10 @@
                                 <a class="nav-link" href="#">اعمال التصوير </a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#"> البوم الصور</a>
+                                        <a href="#albums"> معرض الصور</a>
                                     </li>
                                     <li>
-                                        <a href="#">البوم الفيديو</a>
+                                        <a href="#prices">الباقات والأسعار</a>
                                     </li>
                                 </ul>
                             </li>
@@ -101,72 +101,29 @@
     <main>
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <section class="hero" id="hero"
-                    style="background: url('./assets/images/hero-1.png'); background-position: left; background-size: cover;background-repeat: no-repeat;">
-                    <div class="hero-content">
-                        <!-- <div class="hero-content__container">
-                    <fieldset>
-                        <legend align="center">اعمال التصوير</legend>
-                        <p>
-                            تريد التقاط صورة فوتوغرافية مميزة لحفلة خطوبة أو زفاف أو تخرج ولا تعرف أفضل مصور؟ وكالة
-                            الفن في السعودية تقدم لك
-                            أفضل خدمات التصوير وبأعلى تقنية وبأنسب الأسعار
-                        </p>
-                    </fieldset>
-                </div>
-                <div class="buttom-icons">
-                    <div class="items">
-
-                        <div class="item">
-                            <img alt="" src="./assets/images/icons/videos.svg">
-                            <p> تصوير فيديو </p>
-                        </div>
-                        <div class="item">
-                            <img alt="" src="./assets/images/icons/photos.svg">
-                            <p> تصوير فوتوجرافي</p>
-                        </div>
-                    </div>
-                </div> -->
-                    </div>
-                </section>
+                <picture class="hero" id="hero">
+                    <source srcset="./assets/images/hero-1.png 1x, " media="(min-width: 700px)" />
+                    <source srcset="./assets/images/albums/foods/2.png" media="(max-width: 500px)" />
+                    <img src="./assets/images/hero-1.png" alt="fancy pants" />
+                    <!-- fallback.jpg is *always* downloaded -->
+                </picture>
             </div>
-
             <div class="item">
-                <section class="hero" id="hero"
-                    style="background: url('./assets/images/hero-2.png'); background-position: left; background-size: cover;background-repeat: no-repeat;">
-                    <div class="hero-content">
-                        <!-- <div class="hero-content__container">
-                    <fieldset>
-                        <legend align="center">اعمال التصوير</legend>
-                        <p>
-                            تريد التقاط صورة فوتوغرافية مميزة لحفلة خطوبة أو زفاف أو تخرج ولا تعرف أفضل مصور؟ وكالة
-                            الفن في السعودية تقدم لك
-                            أفضل خدمات التصوير وبأعلى تقنية وبأنسب الأسعار
-                        </p>
-                    </fieldset>
-                </div>
-                <div class="buttom-icons">
-                    <div class="items">
-
-                        <div class="item">
-                            <img alt="" src="./assets/images/icons/videos.svg">
-                            <p> تصوير فيديو </p>
-                        </div>
-                        <div class="item">
-                            <img alt="" src="./assets/images/icons/photos.svg">
-                            <p> تصوير فوتوجرافي</p>
-                        </div>
-                    </div>
-                </div> -->
-                    </div>
-                </section>
+                <picture class="hero" id="hero">
+                    <source srcset="./assets/images/hero-2.png 1x, " media="(min-width: 700px)" />
+                    <source srcset="./assets/images/albums/foods/4.png" media="(max-width: 500px)" />
+                    <img src="./assets/images/hero-1.png" alt="fancy pants" />
+                    <!-- fallback.jpg is *always* downloaded -->
+                </picture>
             </div>
+
         </div>
 
         <section class="albums" id="albums">
             <div class="albums-cats w-50 my-5">
                 <div class="container">
-                    <div class="row d-flex align-items-center justify-content-center mx-auto position-relative">
+                    <div
+                        class="row d-flex align-items-center justify-content-center mx-auto position-relative mob-cons">
                         <div class="col-md-6 d-flex align-items-center item justify-content-center flex-column">
                             <img src="./assets/images/icons/icon-1.png" alt="" srcset="">
                             <p>
@@ -182,7 +139,7 @@
                 </div>
             </div>
             <hr>
-            <div class="head">
+            <div class="head" id="photo-galleries">
                 <h2> معرض الصور والفيديو</h2>
             </div>
             <div class="links shuffle-controls">
@@ -396,6 +353,7 @@
 
         <!-- ! prices  -->
         <section class="prices" id="prices">
+            <div class="overlay"></div>
             <div class="head pb-5">
                 <h2>
                     الباقات والأسعار

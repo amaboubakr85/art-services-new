@@ -11,6 +11,7 @@ $main_color: #ba8748;
 }
 
 body {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -218,11 +219,16 @@ main {
   .hero {
     min-height: 90vh;
     height: 90vh;
+    img {
+      height: calc(100vh - 97px);
+      object-fit: cover;
+    }
 
     // background: url('../images/hero.png');
-    // background-size: cover;
-    // background-position: left;
-    // background-repeat: no-repeat;
+    // background-size: cover !important;
+    // background-position: center !important;
+    // background-repeat: no-repeat !important;
+
     position: relative;
 
     .hero-content {
@@ -539,9 +545,21 @@ main {
   min-height: 500px;
   display: flex;
   align-items: center;
-
+  position: relative;
   flex-direction: column;
-
+  .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url('../images/prices-overlay.svg');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-x: 85vw;
+    background-position-y: 30vh;
+    z-index: 0;
+  }
   .head {
     margin: 2rem 0;
 
@@ -563,6 +581,7 @@ main {
   }
 
   .photos-price {
+    z-index: 2;
     .cat {
       background-color: transparent;
       display: flex;
@@ -931,6 +950,9 @@ footer {
       width: 10%;
     }
   }
+  main .hero {
+    // here will add responsive code
+  }
   main .hero .hero-content .buttom-icons {
     width: 100%;
   }
@@ -998,6 +1020,18 @@ footer {
   }
   .contact-us .contact-form {
     margin-right: 0;
+  }
+  .albums .albums-cats .mob-cons {
+    display: flex !important;
+    justify-content: space-around !important;
+    width: 100% !important;
+    flex-wrap: nowrap !important;
+  }
+  .prices .photos-price .cat:nth-child(3) {
+    margin-top: 2rem;
+  }
+  .contact-us .contact-form form textarea {
+    height: 40vh;
   }
 }
 
