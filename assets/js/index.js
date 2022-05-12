@@ -105,3 +105,12 @@ $('.owl-carousel').owlCarousel({
     },
   },
 })
+
+let priceBtn = document.querySelectorAll('.prices .photos-price .price-btn')
+if (priceBtn) {
+  priceBtn.forEach((item) => {
+    item.addEventListener('click', function () {
+      window.location.href = '#contact-us'
+    })
+  })
+}

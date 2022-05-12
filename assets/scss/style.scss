@@ -378,6 +378,14 @@ main {
     }
   }
 
+  .mob-cons {
+    .item {
+      img {
+        width: 2rem;
+      }
+    }
+  }
+
   .links {
     margin-top: 3rem;
 
@@ -838,6 +846,10 @@ main {
           }
         }
       }
+    }
+
+    .price-btn {
+      cursor: pointer;
     }
   }
 }
